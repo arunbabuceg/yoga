@@ -1,3 +1,21 @@
-<div class=" bg-pink-300">
-  <app-top-nav></app-top-nav>
+<div class="min-h-screen flex flex-col">
+  <nav class="bg-orange-700 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a routerLink="/" class="text-white text-2xl font-bold">Mahatma Gandhi Yoga Institute</a>
+      <ul class="flex space-x-4">
+        <li><a routerLink="/" class="text-white hover:text-orange-200">Home</a></li>
+        <li><a routerLink="/classes" class="text-white hover:text-orange-200">Classes</a></li>
+        <li><a routerLink="/instructors" class="text-white hover:text-orange-200">Instructors</a></li>
+        <li><a routerLink="/contact" class="text-white hover:text-orange-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="flex-grow">
+    <router-outlet></router-outlet>r̥
+  </main>
+  <footer class="bg-orange-700 text-white p-4 mt-8">
+    <div class="container mx-auto text-center">
+      &copy; 2024 Mahatma Gandhi Yoga Institute. All rights reserved.
+    </div>
+  </footer>
 </div>
