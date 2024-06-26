@@ -65,3 +65,15 @@
     </div>
   </div>
 </div>
+<script>
+  document.getElementById('audio-control').addEventListener('click', function() {
+    var audio = document.getElementById('bg-audio');
+    if (audio.paused) {
+      audio.play();
+      this.textContent = 'Pause Music';
+    } else {
+      audio.pause();
+      this.textContent = 'Play Music';
+    }
+  });
+</script>
